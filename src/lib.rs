@@ -27,6 +27,7 @@ pub mod rendering {
 }
 
 pub mod mesh {
+    pub use crate::chunk::VoxelArray;
     pub use crate::meshing::generate_chunk_mesh;
 }
 

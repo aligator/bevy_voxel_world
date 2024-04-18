@@ -19,7 +19,7 @@ pub(crate) const PADDED_CHUNK_SIZE: u32 = CHUNK_SIZE_U + 2;
 pub(crate) type PaddedChunkShape =
     ConstShape3u32<PADDED_CHUNK_SIZE, PADDED_CHUNK_SIZE, PADDED_CHUNK_SIZE>;
 
-pub(crate) type VoxelArray = [WorldVoxel; PaddedChunkShape::SIZE as usize];
+pub type VoxelArray = [WorldVoxel; PaddedChunkShape::SIZE as usize];
 
 #[derive(Component)]
 #[component(storage = "SparseSet")]
